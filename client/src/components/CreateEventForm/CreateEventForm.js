@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { connect } from "react-redux";
 import { createEvent } from "../../actions/event";
 import PropTypes from "prop-types";
-import { Redirect, useParams, useHistory } from 'react-router-dom'
+import { useParams, useHistory } from 'react-router-dom'
 import './styles.css'
 
 

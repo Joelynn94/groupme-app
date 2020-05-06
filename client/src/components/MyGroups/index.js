@@ -60,7 +60,7 @@ function MyGroupsContainer({ getMyGroups, myGroups }) {
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [page, nextPage]);
 
   return (
     <section className="mygroups-card-container">

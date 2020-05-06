@@ -60,7 +60,6 @@ const EditProfileForm = ({
     state,
     zip,
     birthdate,
-    avatarImage,
     phonenumber,
   } = formData;
 
@@ -94,7 +93,6 @@ const EditProfileForm = ({
           </label>
           <input
             name="avatarImage"
-            value={avatarImage}
             onChange={(event) => onChange(event)}
             className="file-img-upload "
             id="img-upload"

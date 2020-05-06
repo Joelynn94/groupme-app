@@ -8,9 +8,7 @@ import {
   ADD_POST,
   GET_POST,
   ADD_COMMENT,
-  REMOVE_COMMENT,
-  GET_GROUP,
-  USER_LOADED,
+  REMOVE_COMMENT
 } from "./types";
 
 // Add post
@@ -174,7 +172,7 @@ export const deleteComment = (postId, commentId) => async (dispatch) => {
 
     dispatch({
       type: REMOVE_COMMENT,
-      payload: commentId,
+      payload: res.commentId,
     });
 
     dispatch(setAlert("Comment Removed", "success"));

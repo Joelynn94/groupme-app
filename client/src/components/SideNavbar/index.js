@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React  from "react";
 import { getProfileById } from "../../actions/profile";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { logout } from "../../actions/auth";

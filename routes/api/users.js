@@ -15,7 +15,7 @@ const upload = require("../../utils/uploader");
 // @access  Public
 router.post(
   "/",
-  upload.single("avatar"),
+  upload.single("profileImage"),
   [
     check("name", "Name is required").not().isEmpty(),
     check("email", "Please include a valid email").isEmail(),
